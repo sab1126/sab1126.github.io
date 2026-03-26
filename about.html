@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>郭奕里 Yi-Li Kuo</title>
+  <meta name="description" content="About Yi-Li Kuo – Education, Publications, Research, Activities, Certifications." />
+  <link rel="icon" type="image/png" href="icon.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif; }
+  </style>
+</head>
+<body class="antialiased bg-gray-50 dark:bg-zinc-950 text-gray-800 dark:text-gray-100 transition-colors duration-300">
+
+  <script>
+    (function () {
+      const stored = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (stored === 'dark' || (!stored && prefersDark)) {
+        document.documentElement.classList.add('dark');
+      }
+    })();
+  </script>
+
+  <div class="min-h-screen flex flex-col max-w-3xl mx-auto px-4 md:px-0">
+
+    <!-- Navigation -->
+    <header class="pt-6 pb-4 flex items-center justify-between">
+      <nav class="flex space-x-6 text-sm font-medium text-gray-600 dark:text-gray-400">
+        <a href="index.html" class="hover:text-gray-900 dark:hover:text-gray-100 transition-colors">Home</a>
+        <a href="about.html" class="text-gray-900 dark:text-gray-100 font-semibold border-b border-gray-900 dark:border-gray-100">About</a>
+      </nav>
+      <button id="theme-toggle" aria-label="Toggle dark mode"
+        class="p-2 rounded-full text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707M17.657 17.657l-.707-.707M6.343 6.343l-.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 block dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+        </svg>
+      </button>
+    </header>
+
+    <main class="flex-1 mt-6 mb-16 space-y-8">
+
+      <!-- ── Education ─────────────────────────────────── -->
+      <section>
+        <h2 class="text-lg font-bold mb-4 text-gray-500 dark:text-gray-400 uppercase tracking-widest text-xs">Education</h2>
+        <div class="space-y-4">
+
+          <!-- NTU card -->
+          <div class="bg-white dark:bg-zinc-900 rounded-2xl border border-gray-200 dark:border-zinc-800 p-5 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex items-start justify-between gap-3">
+              <div class="flex-1">
+                <div class="flex items-center gap-2 flex-wrap">
+                  <a href="https://www.csie.ntu.edu.tw/" target="_blank" rel="noopener" class="font-semibold text-gray-900 dark:text-gray-100 hover:underline">National Taiwan University</a>
+                  <span class="text-xs bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 px-2 py-0.5 rounded-full font-medium">NTU</span>
+                </div>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-0.5">M.S. in Computer Science and Information Engineering (CSIE)</p>
+              </div>
+              <span class="text-xs text-gray-400 dark:text-gray-500 flex-shrink-0 pt-0.5">2025 – Present</span>
+            </div>
+            <ul class="mt-3 space-y-1 text-sm text-gray-600 dark:text-gray-300">
+              <li class="flex items-start gap-2">
+                <span class="text-gray-300 dark:text-gray-600 mt-0.5">›</span>
+                <a href="http://mirlab.org/" target="_blank" rel="noopener" class="hover:underline text-gray-600 dark:text-gray-300">Multimedia Information Retrieval Lab (MIR Lab)</a>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-gray-300 dark:text-gray-600 mt-0.5">›</span>
+                Advisor: <a href="http://mirlab.org/jang/" target="_blank" rel="noopener" class="hover:underline text-gray-600 dark:text-gray-300">Prof. Jyh-Shing Roger Jang</a>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-gray-300 dark:text-gray-600 mt-0.5">›</span>
+                Research: AI applications in FinTech, including quantitative trading
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-gray-300 dark:text-gray-600 mt-0.5">›</span>
+                Industry Collaboration: <a href="https://www.esunfhc.com/" target="_blank" rel="noopener" class="hover:underline text-gray-600 dark:text-gray-300">E.SUN Financial Holding</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- NCHU card -->
+          <div class="bg-white dark:bg-zinc-900 rounded-2xl border border-gray-200 dark:border-zinc-800 p-5 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex items-start justify-between gap-3">
+              <div class="flex-1">
+                <div class="flex items-center gap-2 flex-wrap">
+                  <a href="https://cs.nchu.edu.tw/" target="_blank" rel="noopener" class="font-semibold text-gray-900 dark:text-gray-100 hover:underline">National Chung Hsing University</a>
+                  <span class="text-xs bg-green-50 dark:bg-green-900/30 text-green-600 dark:text-green-400 px-2 py-0.5 rounded-full font-medium">NCHU</span>
+                </div>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-0.5">B.S. in Computer Science and Information Engineering (CSIE)</p>
+              </div>
+              <span class="text-xs text-gray-400 dark:text-gray-500 flex-shrink-0 pt-0.5">2021 – 2025</span>
+            </div>
+
+            <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+              <!-- Achievements -->
+              <div class="bg-gray-50 dark:bg-zinc-800 rounded-xl p-3">
+                <p class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-2">Achievements</p>
+                <ul class="space-y-1 text-sm text-gray-600 dark:text-gray-300">
+                  <li class="flex items-center gap-1.5">
+                    <span class="text-yellow-500">★</span> Class Ranking: 1st
+                  </li>
+                  <li class="flex items-center gap-1.5">
+                    <span class="text-yellow-500">★</span> Department Ranking: 1st
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Honors -->
+              <div class="bg-gray-50 dark:bg-zinc-800 rounded-xl p-3">
+                <p class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-2">Honor Societies</p>
+                <ul class="space-y-1 text-sm text-gray-600 dark:text-gray-300">
+                  <li class="flex items-center gap-1.5">
+                    <span class="text-purple-400">✦</span> <a href="https://phitauphi.org.tw/" target="_blank" rel="noopener" class="hover:underline">Phi Tau Phi Scholastic Honor Society</a>
+                  </li>
+                  <li class="flex items-center gap-1.5">
+                    <span class="text-yellow-400">✦</span> Golden Key Academic Award
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Awards list -->
+            <div class="mt-3">
+              <p class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-2">Awards</p>
+              <ul class="space-y-1 text-sm text-gray-600 dark:text-gray-300">
+                <li class="flex items-start gap-2"><span class="text-gray-300 dark:text-gray-600 mt-0.5">›</span> 2nd Place, Department Capstone Project Competition (2023)</li>
+                <li class="flex items-start gap-2"><span class="text-gray-300 dark:text-gray-600 mt-0.5">›</span> Outstanding Graduate, Department of CSIE</li>
+                <li class="flex items-start gap-2"><span class="text-gray-300 dark:text-gray-600 mt-0.5">›</span> Academic Excellence Award (Ranked First in Class) &mdash; Fall 2022</li>
+                <li class="flex items-start gap-2"><span class="text-gray-300 dark:text-gray-600 mt-0.5">›</span> Academic Excellence Award (Ranked First in Class) &mdash; Spring 2023</li>
+                <li class="flex items-start gap-2"><span class="text-gray-300 dark:text-gray-600 mt-0.5">›</span> Academic Excellence Award (Ranked First in Class) &mdash; Fall 2023</li>
+                <li class="flex items-start gap-2"><span class="text-gray-300 dark:text-gray-600 mt-0.5">›</span> Excellence Award in Moral and Academic Conduct (Qingping Award)</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ── Publications ───────────────────────────────── -->
+      <section>
+        <h2 class="text-lg font-bold mb-4 text-gray-500 dark:text-gray-400 uppercase tracking-widest text-xs">Publications</h2>
+        <a href="https://aclanthology.org/2024.inlg-main.26/" target="_blank" rel="noopener" class="block bg-white dark:bg-zinc-900 rounded-2xl border border-gray-200 dark:border-zinc-800 p-5 shadow-sm hover:shadow-md transition-shadow group">
+          <div class="flex items-start gap-3">
+            <div class="flex-shrink-0 mt-0.5">
+              <div class="w-8 h-8 rounded-lg bg-indigo-50 dark:bg-indigo-900/30 flex items-center justify-center">
+                <svg class="w-4 h-4 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                </svg>
+              </div>
+            </div>
+            <div class="flex-1 min-w-0">
+              <p class="font-medium text-gray-900 dark:text-gray-100 leading-snug">
+                Personalized Cloze Test Generation with Large Language Models: Streamlining MCQ Development and Enhancing Adaptive Learning
+              </p>
+              <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                Shen, C.-H., <span class="font-medium text-gray-700 dark:text-gray-300">Kuo, Y.-L.</span>, &amp; Fan, Y.-C.
+              </p>
+              <div class="flex items-center gap-2 mt-2 flex-wrap">
+                <span class="text-xs bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 px-2 py-0.5 rounded-full">INLG 2024</span>
+                <span class="text-xs text-gray-400">17th International Natural Language Generation Conference</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </section>
+
+      <!-- ── Projects / Research ────────────────────────── -->
+      <section>
+        <h2 class="text-lg font-bold mb-4 text-gray-500 dark:text-gray-400 uppercase tracking-widest text-xs">Projects / Research</h2>
+        <div class="space-y-4">
+
+          <div class="bg-white dark:bg-zinc-900 rounded-2xl border border-gray-200 dark:border-zinc-800 p-5 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex items-start gap-3">
+              <div class="flex-shrink-0 mt-0.5">
+                <div class="w-8 h-8 rounded-lg bg-emerald-50 dark:bg-emerald-900/30 flex items-center justify-center">
+                  <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="flex-1">
+                <div class="flex items-center gap-2 flex-wrap">
+                  <h3 class="font-semibold text-gray-900 dark:text-gray-100">AI-based Financial Analysis</h3>
+                  <span class="inline-flex items-center gap-1 text-xs bg-emerald-50 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 px-2 py-0.5 rounded-full font-medium">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                    In Progress
+                  </span>
+                </div>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                  Applying large language models (LLMs) to financial data analysis and quantitative trading research.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- OWL -->
+          <div class="bg-white dark:bg-zinc-900 rounded-2xl border border-gray-200 dark:border-zinc-800 p-5 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex items-start gap-3">
+              <div class="flex-shrink-0 mt-0.5">
+                <div class="w-8 h-8 rounded-lg bg-sky-50 dark:bg-sky-900/30 flex items-center justify-center">
+                  <svg class="w-4 h-4 text-sky-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="flex-1">
+                <div class="flex items-center gap-2 flex-wrap">
+                  <h3 class="font-semibold text-gray-900 dark:text-gray-100">OWL English Learning Platform</h3>
+                  <span class="text-xs bg-sky-50 dark:bg-sky-900/30 text-sky-600 dark:text-sky-400 px-2 py-0.5 rounded-full font-medium">
+                    3rd Place, CTCI Foundation AI Innovation Competition
+                  </span>
+                </div>
+                <ul class="mt-2 space-y-1 text-sm text-gray-500 dark:text-gray-400">
+                  <li class="flex items-start gap-2"><span class="text-gray-300 dark:text-gray-600 mt-0.5">›</span>Built speaking and listening modules using Web Speech API (TTS/STT) entirely on the front-end without external servers</li>
+                  <li class="flex items-start gap-2"><span class="text-gray-300 dark:text-gray-600 mt-0.5">›</span>Implemented Levenshtein Distance-based pronunciation scoring with three practice modes (word, sentence, full-text)</li>
+                  <li class="flex items-start gap-2"><span class="text-gray-300 dark:text-gray-600 mt-0.5">›</span>Responsible for team coordination, confusable word module development, and cross-module system integration</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- RFID -->
+          <div class="bg-white dark:bg-zinc-900 rounded-2xl border border-gray-200 dark:border-zinc-800 p-5 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex items-start gap-3">
+              <div class="flex-shrink-0 mt-0.5">
+                <div class="w-8 h-8 rounded-lg bg-violet-50 dark:bg-violet-900/30 flex items-center justify-center">
+                  <svg class="w-4 h-4 text-violet-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="flex-1">
+                <div class="flex items-center gap-2 flex-wrap">
+                  <h3 class="font-semibold text-gray-900 dark:text-gray-100">RFID Inventory Management System</h3>
+                  <span class="text-xs bg-violet-50 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 px-2 py-0.5 rounded-full font-medium">
+                    Industry Collaboration
+                  </span>
+                </div>
+                <ul class="mt-2 space-y-1 text-sm text-gray-500 dark:text-gray-400">
+                  <li class="flex items-start gap-2"><span class="text-gray-300 dark:text-gray-600 mt-0.5">›</span>Developed mobile UI pages using Flutter for a garment logistics RFID system</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ── Activities ─────────────────────────────────── -->
+      <section>
+        <h2 class="text-lg font-bold mb-4 text-gray-500 dark:text-gray-400 uppercase tracking-widest text-xs">Activities</h2>
+        <div class="bg-white dark:bg-zinc-900 rounded-2xl border border-gray-200 dark:border-zinc-800 p-5 shadow-sm">
+          <ul class="space-y-3">
+            <li class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-lg bg-red-50 dark:bg-red-900/30 flex items-center justify-center flex-shrink-0">
+                <!-- Google G icon -->
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none">
+                  <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                  <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                  <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                  <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                </svg>
+              </div>
+              <div>
+                <p class="text-sm font-medium text-gray-800 dark:text-gray-100">Google Developer Student Clubs (GDSC)</p>
+                <p class="text-xs text-gray-500 dark:text-gray-400">Core Team Member</p>
+              </div>
+            </li>
+            <li class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-lg bg-gray-100 dark:bg-zinc-800 flex items-center justify-center flex-shrink-0">
+                <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+              </div>
+              <div>
+                <p class="text-sm font-medium text-gray-800 dark:text-gray-100">Department Student Association</p>
+                <p class="text-xs text-gray-500 dark:text-gray-400">Member</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ── Certifications ─────────────────────────────── -->
+      <section>
+        <h2 class="text-lg font-bold mb-4 text-gray-500 dark:text-gray-400 uppercase tracking-widest text-xs">Certifications</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+          <div class="bg-white dark:bg-zinc-900 rounded-2xl border border-gray-200 dark:border-zinc-800 p-5 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-900/30 flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/>
+                </svg>
+              </div>
+              <div>
+                <p class="text-sm font-semibold text-gray-900 dark:text-gray-100">TOEIC</p>
+                <p class="text-xl font-bold text-blue-600 dark:text-blue-400">795</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white dark:bg-zinc-900 rounded-2xl border border-gray-200 dark:border-zinc-800 p-5 shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-red-50 dark:bg-red-900/30 flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/>
+                </svg>
+              </div>
+              <div>
+                <p class="text-sm font-semibold text-gray-900 dark:text-gray-100">IELTS</p>
+                <p class="text-xl font-bold text-red-500 dark:text-red-400">6.0</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-6 text-center text-xs text-gray-400 dark:text-gray-500 border-t border-gray-200 dark:border-zinc-800">
+      &copy; 2025 Yi-Li Kuo
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById('theme-toggle').addEventListener('click', function () {
+      const html = document.documentElement;
+      if (html.classList.contains('dark')) {
+        html.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+      } else {
+        html.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+      }
+    });
+  </script>
+</body>
+</html>
