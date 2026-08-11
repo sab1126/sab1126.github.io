@@ -3,13 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>郭奕里 Yi-Li Kuo</title>
+  <title>About – 郭奕里 Yi-Li Kuo</title>
   <meta name="description" content="About Yi-Li Kuo – Education, Publications, Research, Activities, Certifications." />
   <link rel="icon" type="image/png" href="icon.png" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = { darkMode: 'class' }
-  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -17,343 +14,280 @@
     body { font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif; }
   </style>
 </head>
-<body class="antialiased bg-gray-50 dark:bg-zinc-950 text-gray-800 dark:text-gray-100 transition-colors duration-300">
+<body class="antialiased bg-black text-white">
 
-  <script>
-    (function () {
-      const stored = localStorage.getItem('theme');
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      if (stored === 'dark' || (!stored && prefersDark)) {
-        document.documentElement.classList.add('dark');
-      }
-    })();
-  </script>
-
-  <div class="min-h-screen flex flex-col max-w-3xl mx-auto px-4 md:px-0">
-
-    <!-- Navigation -->
-    <header class="pt-6 pb-4 flex items-center justify-between">
-      <nav class="flex space-x-6 text-sm font-medium text-gray-600 dark:text-gray-400">
-        <a href="index.html" class="hover:text-gray-900 dark:hover:text-gray-100 transition-colors">Home</a>
-        <a href="about.html" class="text-gray-900 dark:text-gray-100 font-semibold border-b border-gray-900 dark:border-gray-100">About</a>
+  <!-- Navigation -->
+  <header class="sticky top-0 z-50 bg-black/80 backdrop-blur border-b border-zinc-800">
+    <div class="max-w-6xl mx-auto px-6 md:px-10 flex items-center justify-between h-20">
+      <a href="index.html" class="text-xl font-extrabold tracking-tight">YL</a>
+      <nav class="flex items-center gap-4 sm:gap-8 text-xs sm:text-sm font-medium text-gray-300">
+        <a href="index.html" class="pb-1 border-b-2 border-transparent hover:text-white hover:border-red-500 transition-colors">Home</a>
+        <a href="about.html" class="pb-1 border-b-2 border-red-500 text-white">About</a>
+        <a href="projects.html" class="pb-1 border-b-2 border-transparent hover:text-white hover:border-red-500 transition-colors">Projects</a>
+        <a href="contact.html" class="pb-1 border-b-2 border-transparent hover:text-white hover:border-red-500 transition-colors">Contact</a>
       </nav>
-      <button id="theme-toggle" aria-label="Toggle dark mode"
-        class="p-2 rounded-full text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707M17.657 17.657l-.707-.707M6.343 6.343l-.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z"/>
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 block dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
-        </svg>
-      </button>
-    </header>
+    </div>
+  </header>
 
-    <main class="flex-1 mt-6 mb-16 space-y-8">
+  <main class="max-w-6xl mx-auto px-6 md:px-10 py-12 md:py-16 space-y-16">
 
-      <!-- ── Education ─────────────────────────────────── -->
-      <section>
-        <h2 class="text-lg font-bold mb-4 text-gray-500 dark:text-gray-400 uppercase tracking-widest text-xs">Education</h2>
-        <div class="space-y-4">
+    <!-- ── Intro ─────────────────────────────────── -->
+    <section class="grid md:grid-cols-[220px_1fr] gap-10 items-start">
+      <div class="flex justify-center md:justify-start">
+        <div class="relative -rotate-3">
+          <div class="bg-zinc-100 p-2 pb-5 rounded-sm shadow-2xl w-48">
+            <img src="profile.jpg" alt="Yi-Li Kuo" class="w-full aspect-square object-cover" />
+          </div>
+        </div>
+      </div>
 
-          <!-- NTU card -->
-          <div class="bg-white dark:bg-zinc-900 rounded-2xl border border-gray-200 dark:border-zinc-800 p-5 shadow-sm hover:shadow-md transition-shadow">
-            <div class="flex items-start justify-between gap-3">
-              <div class="flex-1">
-                <div class="flex items-center gap-2 flex-wrap">
-                  <a href="https://www.csie.ntu.edu.tw/" target="_blank" rel="noopener" class="font-semibold text-gray-900 dark:text-gray-100 hover:underline">National Taiwan University</a>
-                  <span class="text-xs bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 px-2 py-0.5 rounded-full font-medium">NTU</span>
-                </div>
-                <p class="text-sm text-gray-500 dark:text-gray-400 mt-0.5">M.S. in Computer Science and Information Engineering (CSIE)</p>
-              </div>
-              <span class="text-xs text-gray-400 dark:text-gray-500 flex-shrink-0 pt-0.5">2025 – Present</span>
-            </div>
-            <ul class="mt-3 space-y-1 text-sm text-gray-600 dark:text-gray-300">
-              <li class="flex items-start gap-2">
-                <span class="text-gray-300 dark:text-gray-600 mt-0.5">›</span>
-                <a href="http://mirlab.org/" target="_blank" rel="noopener" class="hover:underline text-gray-600 dark:text-gray-300">Multimedia Information Retrieval Lab (MIR Lab)</a>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-gray-300 dark:text-gray-600 mt-0.5">›</span>
-                Advisor: <a href="http://mirlab.org/jang/" target="_blank" rel="noopener" class="hover:underline text-gray-600 dark:text-gray-300">Prof. Jyh-Shing Roger Jang</a>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-gray-300 dark:text-gray-600 mt-0.5">›</span>
-                Research: AI applications in FinTech, including quantitative trading
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-gray-300 dark:text-gray-600 mt-0.5">›</span>
-                Industry Collaboration: <a href="https://www.esunfhc.com/" target="_blank" rel="noopener" class="hover:underline text-gray-600 dark:text-gray-300">E.SUN Financial Holding</a>
-              </li>
+      <div>
+        <h1 class="text-3xl sm:text-4xl font-extrabold flex items-center gap-3">
+          <span class="w-1 h-8 bg-red-500 inline-block"></span> About Me
+        </h1>
+        <div class="mt-5 space-y-4 text-gray-300 text-sm sm:text-base leading-relaxed">
+          <p>
+            I am currently a Master's student in Computer Science at
+            <a href="https://www.csie.ntu.edu.tw/" target="_blank" rel="noopener" class="text-white border-b border-gray-600 hover:border-red-500 transition-colors">National Taiwan University (NTU)</a>.
+          </p>
+          <p>
+            Under the guidance of
+            <a href="http://mirlab.org/jang/" target="_blank" rel="noopener" class="text-white border-b border-gray-600 hover:border-red-500 transition-colors">Prof. Jyh-Shing Roger Jang</a>
+            in the <a href="http://mirlab.org/" target="_blank" rel="noopener" class="text-white border-b border-gray-600 hover:border-red-500 transition-colors">MIR Lab</a>,
+            my research focuses on AI applications in FinTech, particularly leveraging large language models (LLMs) for quantitative trading.
+          </p>
+          <p>
+            I am also involved in a collaborative project with
+            <a href="https://www.esunfhc.com/" target="_blank" rel="noopener" class="text-white border-b border-gray-600 hover:border-red-500 transition-colors">E.SUN Financial Holding</a>,
+            assisting in applying LLM-based methods to financial data analysis and evaluating their effectiveness.
+          </p>
+        </div>
+
+        <div class="mt-6 flex items-center gap-4">
+          <a href="mailto:sabrina398866@gmail.com" aria-label="Email" class="text-gray-400 hover:text-white transition-colors">
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/%E5%A5%95%E9%87%8C-%E9%83%AD-4686212a6/" target="_blank" rel="noopener" aria-label="LinkedIn" class="text-gray-400 hover:text-white transition-colors">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+          <a href="https://github.com/sab1126" target="_blank" rel="noopener" aria-label="GitHub"
+             class="text-gray-400 hover:text-white transition-colors">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Stats ─────────────────────────────────── -->
+    <section class="grid grid-cols-2 sm:grid-cols-4 gap-6 border-y border-zinc-800 py-8 text-center">
+      <div>
+        <p class="text-3xl sm:text-4xl font-extrabold text-red-500">2</p>
+        <p class="mt-1 text-xs sm:text-sm text-gray-400">Degrees<br class="hidden sm:block">(B.S. + M.S.)</p>
+      </div>
+      <div>
+        <p class="text-3xl sm:text-4xl font-extrabold text-red-500">1</p>
+        <p class="mt-1 text-xs sm:text-sm text-gray-400">Publication</p>
+      </div>
+      <div>
+        <p class="text-3xl sm:text-4xl font-extrabold text-red-500">3</p>
+        <p class="mt-1 text-xs sm:text-sm text-gray-400">Research Projects</p>
+      </div>
+      <div>
+        <p class="text-3xl sm:text-4xl font-extrabold text-red-500">2</p>
+        <p class="mt-1 text-xs sm:text-sm text-gray-400">Certifications</p>
+      </div>
+    </section>
+
+    <!-- ── Education & What I Do ─────────────────── -->
+    <section class="grid md:grid-cols-2 gap-12">
+
+      <div>
+        <h2 class="text-sm font-bold uppercase tracking-widest text-gray-400 border-b border-red-500 inline-block pb-1 mb-6">Education</h2>
+        <div class="space-y-6 border-l border-zinc-800 pl-6">
+
+          <div class="relative">
+            <span class="absolute -left-[29px] top-1 w-2.5 h-2.5 rounded-full bg-red-500"></span>
+            <a href="https://www.csie.ntu.edu.tw/" target="_blank" rel="noopener" class="font-semibold text-white hover:underline">National Taiwan University</a>
+            <p class="text-xs text-gray-500 mt-0.5">2025 – Present</p>
+            <p class="text-sm text-gray-300 mt-1">M.S. in Computer Science and Information Engineering (CSIE)</p>
+            <p class="text-sm text-gray-400 mt-1">
+              <a href="http://mirlab.org/" target="_blank" rel="noopener" class="hover:underline">MIR Lab</a> ·
+              Advisor: <a href="http://mirlab.org/jang/" target="_blank" rel="noopener" class="hover:underline">Prof. Jyh-Shing Roger Jang</a>
+            </p>
+            <p class="text-sm text-gray-400">Research: AI applications in FinTech, including quantitative trading</p>
+          </div>
+
+          <div class="relative">
+            <span class="absolute -left-[29px] top-1 w-2.5 h-2.5 rounded-full bg-zinc-600"></span>
+            <a href="https://cs.nchu.edu.tw/" target="_blank" rel="noopener" class="font-semibold text-white hover:underline">National Chung Hsing University</a>
+            <p class="text-xs text-gray-500 mt-0.5">2021 – 2025</p>
+            <p class="text-sm text-gray-300 mt-1">B.S. in Computer Science and Information Engineering (CSIE)</p>
+            <ul class="mt-2 space-y-1 text-sm text-gray-400">
+              <li>› Class Ranking: 1st · Department Ranking: 1st</li>
+              <li>› <a href="https://phitauphi.org.tw/" target="_blank" rel="noopener" class="hover:underline">Phi Tau Phi Scholastic Honor Society</a> · Golden Key Academic Award</li>
+              <li>› 2nd Place, Department Capstone Project Competition (2023)</li>
+              <li>› Outstanding Graduate, Department of CSIE</li>
+              <li>› Academic Excellence Award (Ranked First in Class) — Fall 2022, Spring 2023, Fall 2023</li>
+              <li>› Excellence Award in Moral and Academic Conduct (Ching-O Award)</li>
             </ul>
           </div>
 
-          <!-- NCHU card -->
-          <div class="bg-white dark:bg-zinc-900 rounded-2xl border border-gray-200 dark:border-zinc-800 p-5 shadow-sm hover:shadow-md transition-shadow">
-            <div class="flex items-start justify-between gap-3">
-              <div class="flex-1">
-                <div class="flex items-center gap-2 flex-wrap">
-                  <a href="https://cs.nchu.edu.tw/" target="_blank" rel="noopener" class="font-semibold text-gray-900 dark:text-gray-100 hover:underline">National Chung Hsing University</a>
-                  <span class="text-xs bg-green-50 dark:bg-green-900/30 text-green-600 dark:text-green-400 px-2 py-0.5 rounded-full font-medium">NCHU</span>
-                </div>
-                <p class="text-sm text-gray-500 dark:text-gray-400 mt-0.5">B.S. in Computer Science and Information Engineering (CSIE)</p>
-              </div>
-              <span class="text-xs text-gray-400 dark:text-gray-500 flex-shrink-0 pt-0.5">2021 – 2025</span>
-            </div>
-
-            <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-              <!-- Achievements -->
-              <div class="bg-gray-50 dark:bg-zinc-800 rounded-xl p-3">
-                <p class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-2">Achievements</p>
-                <ul class="space-y-1 text-sm text-gray-600 dark:text-gray-300">
-                  <li class="flex items-center gap-1.5">
-                    <span class="text-yellow-500">★</span> Class Ranking: 1st
-                  </li>
-                  <li class="flex items-center gap-1.5">
-                    <span class="text-yellow-500">★</span> Department Ranking: 1st
-                  </li>
-                </ul>
-              </div>
-
-              <!-- Honors -->
-              <div class="bg-gray-50 dark:bg-zinc-800 rounded-xl p-3">
-                <p class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-2">Honor Societies</p>
-                <ul class="space-y-1 text-sm text-gray-600 dark:text-gray-300">
-                  <li class="flex items-center gap-1.5">
-                    <span class="text-purple-400">✦</span> <a href="https://phitauphi.org.tw/" target="_blank" rel="noopener" class="hover:underline">Phi Tau Phi Scholastic Honor Society</a>
-                  </li>
-                  <li class="flex items-center gap-1.5">
-                    <span class="text-yellow-400">✦</span> Golden Key Academic Award
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Awards list -->
-            <div class="mt-3">
-              <p class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-2">Awards</p>
-              <ul class="space-y-1 text-sm text-gray-600 dark:text-gray-300">
-                <li class="flex items-start gap-2"><span class="text-gray-300 dark:text-gray-600 mt-0.5">›</span> 2nd Place, Department Capstone Project Competition (2023)</li>
-                <li class="flex items-start gap-2"><span class="text-gray-300 dark:text-gray-600 mt-0.5">›</span> Outstanding Graduate, Department of CSIE</li>
-                <li class="flex items-start gap-2"><span class="text-gray-300 dark:text-gray-600 mt-0.5">›</span> Academic Excellence Award (Ranked First in Class) &mdash; Fall 2022</li>
-                <li class="flex items-start gap-2"><span class="text-gray-300 dark:text-gray-600 mt-0.5">›</span> Academic Excellence Award (Ranked First in Class) &mdash; Spring 2023</li>
-                <li class="flex items-start gap-2"><span class="text-gray-300 dark:text-gray-600 mt-0.5">›</span> Academic Excellence Award (Ranked First in Class) &mdash; Fall 2023</li>
-                <li class="flex items-start gap-2"><span class="text-gray-300 dark:text-gray-600 mt-0.5">›</span> Excellence Award in Moral and Academic Conduct (Ching-O Award)</li>
-              </ul>
-            </div>
-          </div>
-
         </div>
-      </section>
+      </div>
 
-      <!-- ── Publications ───────────────────────────────── -->
-      <section>
-        <h2 class="text-lg font-bold mb-4 text-gray-500 dark:text-gray-400 uppercase tracking-widest text-xs">Publications</h2>
-        <a href="https://aclanthology.org/2024.inlg-main.26/" target="_blank" rel="noopener" class="block bg-white dark:bg-zinc-900 rounded-2xl border border-gray-200 dark:border-zinc-800 p-5 shadow-sm hover:shadow-md transition-shadow group">
-          <div class="flex items-start gap-3">
-            <div class="flex-shrink-0 mt-0.5">
-              <div class="w-8 h-8 rounded-lg bg-indigo-50 dark:bg-indigo-900/30 flex items-center justify-center">
-                <svg class="w-4 h-4 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-                </svg>
-              </div>
-            </div>
-            <div class="flex-1 min-w-0">
-              <p class="font-medium text-gray-900 dark:text-gray-100 leading-snug">
-                Personalized Cloze Test Generation with Large Language Models: Streamlining MCQ Development and Enhancing Adaptive Learning
-              </p>
-              <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">
-                Shen, C.-H., <span class="font-medium text-gray-700 dark:text-gray-300">Kuo, Y.-L.</span>, &amp; Fan, Y.-C.
-              </p>
-              <div class="flex items-center gap-2 mt-2 flex-wrap">
-                <span class="text-xs bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 px-2 py-0.5 rounded-full">INLG 2024</span>
-                <span class="text-xs text-gray-400">17th International Natural Language Generation Conference</span>
-              </div>
-            </div>
-          </div>
-        </a>
-      </section>
-
-      <!-- ── Projects / Research ────────────────────────── -->
-      <section>
-        <h2 class="text-lg font-bold mb-4 text-gray-500 dark:text-gray-400 uppercase tracking-widest text-xs">Projects / Research</h2>
+      <div>
+        <h2 class="text-sm font-bold uppercase tracking-widest text-gray-400 border-b border-red-500 inline-block pb-1 mb-6">What I Do</h2>
         <div class="space-y-4">
-
-          <div class="bg-white dark:bg-zinc-900 rounded-2xl border border-gray-200 dark:border-zinc-800 p-5 shadow-sm hover:shadow-md transition-shadow">
-            <div class="flex items-start gap-3">
-              <div class="flex-shrink-0 mt-0.5">
-                <div class="w-8 h-8 rounded-lg bg-emerald-50 dark:bg-emerald-900/30 flex items-center justify-center">
-                  <svg class="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
-                  </svg>
-                </div>
-              </div>
-              <div class="flex-1">
-                <div class="flex items-center gap-2 flex-wrap">
-                  <h3 class="font-semibold text-gray-900 dark:text-gray-100">AI-based Financial Analysis</h3>
-                  <span class="inline-flex items-center gap-1 text-xs bg-emerald-50 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 px-2 py-0.5 rounded-full font-medium">
-                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                    In Progress
-                  </span>
-                </div>
-                <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">
-                  Applying large language models (LLMs) to financial data analysis and quantitative trading research.
-                </p>
-              </div>
+          <div class="flex gap-4 items-start bg-zinc-900 border border-zinc-800 rounded-xl p-4">
+            <div class="w-9 h-9 rounded-lg bg-red-500/10 flex items-center justify-center flex-shrink-0">
+              <svg class="w-4 h-4 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+            </div>
+            <div>
+              <p class="font-semibold text-white text-sm">AI &amp; FinTech Research</p>
+              <p class="text-sm text-gray-400 mt-0.5">Applying LLMs and AI methods to financial analysis and quantitative trading.</p>
             </div>
           </div>
-
-          <!-- OWL -->
-          <div class="bg-white dark:bg-zinc-900 rounded-2xl border border-gray-200 dark:border-zinc-800 p-5 shadow-sm hover:shadow-md transition-shadow">
-            <div class="flex items-start gap-3">
-              <div class="flex-shrink-0 mt-0.5">
-                <div class="w-8 h-8 rounded-lg bg-sky-50 dark:bg-sky-900/30 flex items-center justify-center">
-                  <svg class="w-4 h-4 text-sky-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/>
-                  </svg>
-                </div>
-              </div>
-              <div class="flex-1">
-                <div class="flex items-center gap-2 flex-wrap">
-                  <h3 class="font-semibold text-gray-900 dark:text-gray-100">OWL English Learning Platform</h3>
-                  <span class="text-xs bg-sky-50 dark:bg-sky-900/30 text-sky-600 dark:text-sky-400 px-2 py-0.5 rounded-full font-medium">
-                    3rd Place, CTCI Foundation AI Innovation Competition
-                  </span>
-                </div>
-                <ul class="mt-2 space-y-1 text-sm text-gray-500 dark:text-gray-400">
-                  <li class="flex items-start gap-2"><span class="text-gray-300 dark:text-gray-600 mt-0.5">›</span>Built speaking and listening modules using Web Speech API (TTS/STT) entirely on the front-end without external servers</li>
-                  <li class="flex items-start gap-2"><span class="text-gray-300 dark:text-gray-600 mt-0.5">›</span>Implemented Levenshtein Distance-based pronunciation scoring with three practice modes (word, sentence, full-text)</li>
-                </ul>
-              </div>
+          <div class="flex gap-4 items-start bg-zinc-900 border border-zinc-800 rounded-xl p-4">
+            <div class="w-9 h-9 rounded-lg bg-red-500/10 flex items-center justify-center flex-shrink-0">
+              <svg class="w-4 h-4 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l-3 3 3 3m8-6l3 3-3 3M13 5l-2 14"/></svg>
+            </div>
+            <div>
+              <p class="font-semibold text-white text-sm">Full-Stack Development</p>
+              <p class="text-sm text-gray-400 mt-0.5">Building end-to-end web applications and turning ideas into usable products.</p>
             </div>
           </div>
-
-          <!-- RFID -->
-          <div class="bg-white dark:bg-zinc-900 rounded-2xl border border-gray-200 dark:border-zinc-800 p-5 shadow-sm hover:shadow-md transition-shadow">
-            <div class="flex items-start gap-3">
-              <div class="flex-shrink-0 mt-0.5">
-                <div class="w-8 h-8 rounded-lg bg-violet-50 dark:bg-violet-900/30 flex items-center justify-center">
-                  <svg class="w-4 h-4 text-violet-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
-                  </svg>
-                </div>
-              </div>
-              <div class="flex-1">
-                <div class="flex items-center gap-2 flex-wrap">
-                  <h3 class="font-semibold text-gray-900 dark:text-gray-100">RFID Inventory Management System</h3>
-                  <span class="text-xs bg-violet-50 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 px-2 py-0.5 rounded-full font-medium">
-                    Internship
-                  </span>
-                </div>
-                <ul class="mt-2 space-y-1 text-sm text-gray-500 dark:text-gray-400">
-                  <li class="flex items-start gap-2"><span class="text-gray-300 dark:text-gray-600 mt-0.5">›</span>Developed mobile UI pages using Flutter for a garment logistics RFID system</li>
-                </ul>
-              </div>
+          <div class="flex gap-4 items-start bg-zinc-900 border border-zinc-800 rounded-xl p-4">
+            <div class="w-9 h-9 rounded-lg bg-red-500/10 flex items-center justify-center flex-shrink-0">
+              <svg class="w-4 h-4 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            </div>
+            <div>
+              <p class="font-semibold text-white text-sm">Academic Research &amp; Writing</p>
+              <p class="text-sm text-gray-400 mt-0.5">Designing experiments, analyzing results, and turning research findings into clear academic work.</p>
             </div>
           </div>
-
         </div>
-      </section>
+      </div>
 
-      <!-- ── Activities ─────────────────────────────────── -->
-      <section>
-        <h2 class="text-lg font-bold mb-4 text-gray-500 dark:text-gray-400 uppercase tracking-widest text-xs">Activities</h2>
-        <div class="bg-white dark:bg-zinc-900 rounded-2xl border border-gray-200 dark:border-zinc-800 p-5 shadow-sm hover:shadow-md transition-shadow">
-          <ul class="space-y-3">
-            <li class="flex items-center gap-3">
-              <div class="w-8 h-8 rounded-lg bg-red-50 dark:bg-red-900/30 flex items-center justify-center flex-shrink-0">
-                <!-- Google G icon -->
-                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none">
-                  <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
-                  <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
-                  <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
-                  <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
-                </svg>
-              </div>
-              <div>
-                <p class="text-sm font-medium text-gray-800 dark:text-gray-100">Google Developer Student Clubs (GDSC)</p>
-                <p class="text-xs text-gray-500 dark:text-gray-400">Core Team Member</p>
-              </div>
-            </li>
-            <li class="flex items-center gap-3">
-              <div class="w-8 h-8 rounded-lg bg-gray-100 dark:bg-zinc-800 flex items-center justify-center flex-shrink-0">
-                <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
-                </svg>
-              </div>
-              <div>
-                <p class="text-sm font-medium text-gray-800 dark:text-gray-100">Department Student Association</p>
-                <p class="text-xs text-gray-500 dark:text-gray-400">Member</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
+    </section>
 
-      <!-- ── Certifications ─────────────────────────────── -->
-      <section>
-        <h2 class="text-lg font-bold mb-4 text-gray-500 dark:text-gray-400 uppercase tracking-widest text-xs">Certifications</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-
-          <div class="bg-white dark:bg-zinc-900 rounded-2xl border border-gray-200 dark:border-zinc-800 p-5 shadow-sm hover:shadow-md transition-shadow">
-            <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-900/30 flex items-center justify-center flex-shrink-0">
-                <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/>
-                </svg>
-              </div>
-              <div>
-                <p class="text-sm font-semibold text-gray-900 dark:text-gray-100">TOEIC</p>
-                <p class="text-xl font-bold text-blue-600 dark:text-blue-400">795</p>
-              </div>
+    <!-- ── Publications ──────────────────────────── -->
+    <section>
+      <h2 class="text-sm font-bold uppercase tracking-widest text-gray-400 border-b border-red-500 inline-block pb-1 mb-6">Publications</h2>
+      <a href="https://aclanthology.org/2024.inlg-main.26/" target="_blank" rel="noopener"
+         class="block bg-zinc-900 border border-zinc-800 rounded-2xl p-5 hover:border-red-500/50 transition-colors group">
+        <div class="flex items-start gap-3">
+          <div class="w-8 h-8 rounded-lg bg-red-500/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+            <svg class="w-4 h-4 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+            </svg>
+          </div>
+          <div class="flex-1 min-w-0">
+            <p class="font-medium text-white leading-snug group-hover:text-red-400 transition-colors">
+              Personalized Cloze Test Generation with Large Language Models: Streamlining MCQ Development and Enhancing Adaptive Learning
+            </p>
+            <p class="text-sm text-gray-400 mt-1">Shen, C.-H., <span class="text-gray-200">Kuo, Y.-L.</span>, &amp; Fan, Y.-C.</p>
+            <div class="flex items-center gap-2 mt-2 flex-wrap">
+              <span class="text-xs bg-red-500/10 text-red-400 px-2 py-0.5 rounded-full">INLG 2024</span>
+              <span class="text-xs text-gray-500">17th International Natural Language Generation Conference</span>
             </div>
           </div>
-
-          <div class="bg-white dark:bg-zinc-900 rounded-2xl border border-gray-200 dark:border-zinc-800 p-5 shadow-sm hover:shadow-md transition-shadow">
-            <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-xl bg-red-50 dark:bg-red-900/30 flex items-center justify-center flex-shrink-0">
-                <svg class="w-5 h-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/>
-                </svg>
-              </div>
-              <div>
-                <p class="text-sm font-semibold text-gray-900 dark:text-gray-100">IELTS</p>
-                <p class="text-xl font-bold text-red-500 dark:text-red-400">6.0</p>
-              </div>
-            </div>
-          </div>
-
         </div>
-      </section>
+      </a>
+    </section>
 
-    </main>
+    <!-- ── Activities ────────────────────────────── -->
+    <section>
+      <h2 class="text-sm font-bold uppercase tracking-widest text-gray-400 border-b border-red-500 inline-block pb-1 mb-6">Activities</h2>
+      <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-5 space-y-4">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-lg bg-zinc-800 flex items-center justify-center flex-shrink-0">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none">
+              <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+              <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+              <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+              <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+            </svg>
+          </div>
+          <div>
+            <p class="text-sm font-medium text-white">Google Developer Student Clubs (GDSC)</p>
+            <p class="text-xs text-gray-500">Core Team Member</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-lg bg-zinc-800 flex items-center justify-center flex-shrink-0">
+            <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+          </div>
+          <div>
+            <p class="text-sm font-medium text-white">Department Student Association</p>
+            <p class="text-xs text-gray-500">Member</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Footer -->
-    <footer class="py-6 text-center text-xs text-gray-400 dark:text-gray-500 border-t border-gray-200 dark:border-zinc-800">
-      &copy; 2025 Yi-Li Kuo
-    </footer>
+    <!-- ── Certifications ────────────────────────── -->
+    <section>
+      <h2 class="text-sm font-bold uppercase tracking-widest text-gray-400 border-b border-red-500 inline-block pb-1 mb-6">Certifications</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-5 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-red-500/10 flex items-center justify-center flex-shrink-0">
+            <svg class="w-5 h-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/>
+            </svg>
+          </div>
+          <div>
+            <p class="text-sm font-semibold text-white">TOEIC</p>
+            <p class="text-xl font-bold text-red-500">795</p>
+          </div>
+        </div>
+        <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-5 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-red-500/10 flex items-center justify-center flex-shrink-0">
+            <svg class="w-5 h-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/>
+            </svg>
+          </div>
+          <div>
+            <p class="text-sm font-semibold text-white">IELTS</p>
+            <p class="text-xl font-bold text-red-500">6.0</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  </div>
+  </main>
 
-  <script>
-    document.getElementById('theme-toggle').addEventListener('click', function () {
-      const html = document.documentElement;
-      if (html.classList.contains('dark')) {
-        html.classList.remove('dark');
-        localStorage.setItem('theme', 'light');
-      } else {
-        html.classList.add('dark');
-        localStorage.setItem('theme', 'dark');
-      }
-    });
-  </script>
+  <!-- Footer -->
+  <footer class="border-t border-zinc-800 py-8 mt-16">
+    <div class="max-w-6xl mx-auto px-6 md:px-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+      <p>&copy; 2026 Yi-Li Kuo. All rights reserved.</p>
+      <div class="flex items-center gap-4">
+        <a href="mailto:sabrina398866@gmail.com" aria-label="Email" class="hover:text-white transition-colors">
+          <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/%E5%A5%95%E9%87%8C-%E9%83%AD-4686212a6/" target="_blank" rel="noopener" aria-label="LinkedIn" class="hover:text-white transition-colors">
+          <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
+        <a href="https://github.com/sab1126" target="_blank" rel="noopener" aria-label="GitHub" class="hover:text-white transition-colors">
+          <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
