@@ -182,7 +182,7 @@
 
     const params = new URLSearchParams(window.location.search);
     if (params.get('sent') === 'true') {
-      showStatus('Message sent — thanks for reaching out!', true);
+      showStatus('Message sent — thanks for reaching out :)', true);
       window.history.replaceState({}, '', window.location.pathname);
     } else if (params.get('sent') === 'false') {
       showStatus('Something went wrong. Please try again or email me directly.', false);
